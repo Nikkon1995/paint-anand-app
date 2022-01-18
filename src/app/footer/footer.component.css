@@ -1,0 +1,46 @@
+.slideanim {
+    visibility:hidden;
+}
+
+.bg-grey {
+    background-color: #E67F69;
+}
+
+.font {
+    font-size: x-large;
+}
+
+.glyphicon {
+    padding-right: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+}
