@@ -3,7 +3,18 @@
 }
 
 .bg-grey {
-    background-color: #f6f6f6;
+    background-color: #E67F69;
+}
+
+.font {
+    font-size: x-large;
+}
+
+.glyphicon {
+    padding-right: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
 }
 
 .slide {
