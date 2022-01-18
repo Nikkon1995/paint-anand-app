@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public content = {
+    heading: 'Dipika Space Home Studio',
+    subHeading: 'Modern Design For Your Home'
+  }
+
   constructor() { }
 
   ngOnInit(): void {
