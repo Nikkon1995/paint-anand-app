@@ -5,7 +5,6 @@ import { PicturesComponent } from './pictures/pictures.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'footer', redirectTo: '/home'},
   { path: 'home', component: AppMainComponent},
   { path: 'pictures', component: PicturesComponent},
   { path: '**', redirectTo: '/home'}
