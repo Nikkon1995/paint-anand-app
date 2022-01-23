@@ -1,7 +1,11 @@
 .logo {
     color: #f4511e;
     font-size: 200px;
-  }
+}
+
+.bg-grey {
+    padding-top: 70px;
+}
 
 .body {
     font: 400 15px Lato, sans-serif;
@@ -11,15 +15,24 @@
 }
 
 #services {
-    padding: 50px 0px;
+    padding: 20px 0px;
+    color: honeydew;
 }
 
 .border {
     border: 1px dotted #6F1D0B;
     margin: 5px 5px;
     padding: 0px;
+    background-color: #f4511e;
+    color: honeydew;
 }
 
-.space {
-    margin-left: 40px;
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner>img {
+    width: fit-content;
+    height: 500px;
 }
