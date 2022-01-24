@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { PicturesComponent } from './pictures/pictures.component';
 import { FormsModule } from '@angular/forms';
+import { ContactComponent } from './contactForm/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     AppMainComponent,
     HeaderComponent,
     FooterComponent,
-    PicturesComponent
+    PicturesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
