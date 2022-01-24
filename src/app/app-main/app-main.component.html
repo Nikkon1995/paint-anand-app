@@ -1,3 +1,4 @@
+<app-alert *ngIf="displayPrice" (close)="alertClosed()"></app-alert>
 <div class="container">
     <div class="row">
         <div class="col-lg-6">
@@ -46,10 +47,9 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-primary btn-block"
-                    style="padding: 20px; font-size: larger; margin-top: 25px;" routerLink="/pictures">Check other works</button>
-                <button class="btn btn-primary btn-block"
-                    style="padding: 20px; font-size: larger; margin-top: 25px;" routerLink="/contact">Contact Us</button>
+                <button class="btn btn-block button" routerLink="/pictures">Check other works</button>
+                <button class="btn btn-block button" routerLink="/contact">Contact Us</button>
+                <button  type="button" class="btn btn-block button" (click)="displayPrices()">Prices</button>
             </div>
         </div>
     </div>

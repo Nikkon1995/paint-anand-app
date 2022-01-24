@@ -23,7 +23,17 @@ export class AppMainComponent implements OnInit {
     'Repairing',
     'Plumbing Work'
   ]
+
+  displayPrice: boolean = false;
   ngOnInit(): void {
+    this.displayPrice = false;
   }
 
+  displayPrices() {
+    this.displayPrice = true;
+  }
+
+  alertClosed() {
+    this.displayPrice = false;
+  }
 }
