@@ -1,0 +1,54 @@
+.back-drop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.75);
+    z-index: 50;
+}
+
+.alert-main {
+    position: fixed;
+    top: 15vh;
+    left: 20vw;
+    width: 60vw;
+    /* height: 50vh; */
+    padding: 20px;
+    background: rgba(69, 14, 42, 0.57);
+    z-index: 100;
+}
+
+button {
+    font-size: larger;
+}
+
+.font {
+    color: whitesmoke;
+    background-color: rgba(204, 14, 42, 0.57);
+    font-size: larger;
+    font-weight: 500;
+}
+
+.font1 {
+    color: whitesmoke;
+    background-color: rgba(75, 56, 59, 0.68);
+}
+
+.row-margin1 {
+    margin-left: 40px;
+}
+
+.row-margin2 {
+    margin-left: 95px;
+}
+
+@media screen and (max-width: 768px) {
+    .row-margin1 {
+        margin-left: 0px;
+    }
+    
+    .row-margin2 {
+        margin-left: 0px;
+    }
+}
