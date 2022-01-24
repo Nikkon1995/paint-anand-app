@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <form class="form-group" #form="ngForm" (ngSubmit)="onSubmit(form)">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="name">Enter your Name</label>
+                        <input type="text" name="name" id="name" class="form-control" ngModel required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="phone">Enter Contact Info</label>
+                        <input type="number" name="phone" id="phone" class="form-control" ngModel required min="10">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="query">Enter your Query</label>
+                        <textarea name="query" id="query" rows="4" class="form-control" ngModel></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="work">Please select the category:</label>
+                        <select name="work" id="work" class="form-control" ngModel>
+                            <option style="color: black; font-weight: 600;" *ngFor="let work of servicesProdvided" [value]='work'> {{ work }} </option>
+                        </select>
+                    </div>
+                    <div class="col-sm-8">
+                        <label for="others">If other category, please specify.</label>
+                        <input type="text" name="others" id="others" class="form-control" ngModel>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-sm-12">
+                    <button type="submit" [disabled]="form.invalid" class="btn btn-primary" style="margin-right: 20px;">Submit</button>
+                    <button type="button" [disabled]="form.invalid" class="btn btn-danger" (click)="onClear(form)">Clear</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
