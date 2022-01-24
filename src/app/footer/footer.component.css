@@ -2,19 +2,24 @@
     visibility:hidden;
 }
 
+p {
+  color: antiquewhite;
+}
+
 .bg-grey {
-    background-color: #E67F69;
+    background-color: #f4511e;
 }
 
 .font {
     font-size: x-large;
+    color: whitesmoke;
 }
 
 .glyphicon {
     padding-right: 5px;
     font-size: 20px;
     margin-bottom: 20px;
-    color: black;
+    color: whitesmoke;
 }
 
 .slide {
