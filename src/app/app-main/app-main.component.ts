@@ -9,7 +9,7 @@ export class AppMainComponent implements OnInit {
   servicesProdvided: string[] = [
     'Civil Work',
     'Painting Work',
-    'Carpenter Work',
+    'Carpentry Work',
     'Sliding Work',
     'Electric Work',
     'Water Proofing',
@@ -24,16 +24,7 @@ export class AppMainComponent implements OnInit {
     'Plumbing Work'
   ]
 
-  displayPrice: boolean = false;
-  ngOnInit(): void {
-    this.displayPrice = false;
-  }
+  ngOnInit(): void { 
 
-  displayPrices() {
-    this.displayPrice = true;
-  }
-
-  alertClosed() {
-    this.displayPrice = false;
   }
 }

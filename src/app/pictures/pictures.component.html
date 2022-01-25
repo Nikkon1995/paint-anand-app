@@ -1,9 +1,12 @@
-<div class="container">
-    <ul 
-    class="nav nav-tabs nav-justified">
-        <li [ngClass]="{'active': i == 0 }" *ngFor="let work of typesOfWork; let i= index"><a data-toggle="tab" href= "#{{ work }}">{{ work }}</a></li>
-    </ul>
+<div *ngIf="animate" style="text-align: center;">
+    <app-loader></app-loader>
+</div>
 
+<div *ngIf="!animate"class="container">
+    <ul class="nav nav-tabs nav-justified">
+        <li [ngClass]="{'active': i == 0 }" *ngFor="let work of typesOfWork; let i= index"><a data-toggle="tab"
+                href="#{{ work }}">{{ work }}</a></li>
+    </ul>
     <div class="tab-content">
         <div id="Repair" class="tab-pane fade in active">
             <div class="row" style="margin-top: 20px;">
@@ -23,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div id="Flash-ceiling" class="tab-pane fade">
+        <div id="False-ceiling" class="tab-pane fade">
             <div class="row" style="margin-top: 20px;">
                 <div *ngFor="let ceiling of ceilingImages" class="col-sm-4">
                     <div class="thumbnail">
@@ -42,7 +45,8 @@
             </div>
         </div>
         <div id="Shoe-rack" class="tab-pane fade">
-            <div *ngIf="shoeRackImages.length==0" style="height: 300px; font-size: xx-large;" class="jumbotron text-center">No Images!</div>
+            <div *ngIf="shoeRackImages.length==0" style="height: 300px; font-size: xx-large;"
+                class="jumbotron text-center">No Images!</div>
             <div *ngIf="shoeRackImages.length!=0" class="row" style="margin-top: 20px;">
                 <div *ngFor="let shoe of shoeRackImages" class="col-sm-4">
                     <div class="thumbnail">
@@ -69,7 +73,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="Furniture" class="tab-pane fade">
             <div class="row" style="margin-top: 20px;">
                 <div *ngFor="let furniture of furnitureImages" class="col-sm-4">

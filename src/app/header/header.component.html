@@ -1,3 +1,4 @@
+<app-alert *ngIf="displayPrice" (close)="alertClosed()"></app-alert>
 <div id="about">
     <nav class="navbar navbar-default navbar-fixed-top w3-brown">
         <div class="container-fluid">
@@ -12,8 +13,10 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#about">ABOUT</a></li>
+                    <li><a routerLink="/pictures">PHOTOS</a></li>
                     <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a routerLink="/contact">CONTACT</a></li>
+                    <li><a (click)="displayPrices()">PRICE</a></li>
                 </ul>
             </div>
         </div>

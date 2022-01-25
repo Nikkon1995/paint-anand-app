@@ -10,6 +10,7 @@ import { PicturesComponent } from './pictures/pictures.component';
 import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './contactForm/contact.component';
 import { AlertComponent } from './alert/alert.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AlertComponent } from './alert/alert.component';
     FooterComponent,
     PicturesComponent,
     ContactComponent,
-    AlertComponent
+    AlertComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
