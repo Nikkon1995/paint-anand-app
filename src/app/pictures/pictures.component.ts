@@ -9,7 +9,7 @@ export class PicturesComponent {
     typesOfWork: string[] = [
         'Repair',
         'Painting',
-        'Flash-ceiling',
+        'False-ceiling',
         'Kitchen',
         'Shoe-rack',
         'Bathroom',

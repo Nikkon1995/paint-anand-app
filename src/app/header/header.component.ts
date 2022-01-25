@@ -11,10 +11,17 @@ export class HeaderComponent implements OnInit {
     heading: 'Dipika Space Home Studio',
     subHeading: 'Modern Design For Your Home'
   }
-
+  displayPrice: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  displayPrices() {
+    this.displayPrice = true;
+  }
+  
+  alertClosed() {
+    this.displayPrice = false;
+  }
 }
