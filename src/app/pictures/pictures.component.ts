@@ -1,11 +1,18 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
     selector: 'app-picture',
     templateUrl: './pictures.component.html',
     styleUrls: ['./pictures.component.css']
 })
-export class PicturesComponent {
+export class PicturesComponent implements OnInit{
+    animate = true;
+    ngOnInit(): void {
+        setTimeout(()=> {
+            this.animate = false;
+        }, 2000)
+    }
+
     typesOfWork: string[] = [
         'Repair',
         'Painting',
