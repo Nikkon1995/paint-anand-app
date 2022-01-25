@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <form 
+        [formGroup]="form" 
+        class="form-group col-lg-offset-0.5"
+        (ngSubmit)="onSubmit()">
+            <div class="col-lg-6">
+                <label for="username">Enter Username: </label>
+                <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form-control" 
+                formControlName="email">
+            </div>
+            <div class="col-lg-6">
+                <label for="password">Enter Password: </label>
+                <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                class="form-control" 
+                formControlName="password">
+            </div>
+            <div class="col-lg-12">
+                <button class="btn btn-primary" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
