@@ -1,6 +1,18 @@
+.container {
+    font-size: large; 
+    font-weight: 600; 
+    color: white;
+}
+
 .form-field {
     width: 90%; 
     border: 1px solid white; 
     padding: 0px 15px;
     margin: 20px 30px;
+}
+
+.button {
+    margin-top: 20px; 
+    width: 100%; 
+    font-size: large;
 }
