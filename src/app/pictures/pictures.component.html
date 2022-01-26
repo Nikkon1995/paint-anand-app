@@ -2,7 +2,9 @@
     <app-loader></app-loader>
 </div>
 
-<div *ngIf="!animate"class="container">
+<div *ngIf="!animate" class="container">
+    <h3 class="text-center" style="color: white;">Please select the category of the work you want to view.</h3>
+    <div style="margin: 50px 0px">
     <ul class="nav nav-tabs nav-justified">
         <li [ngClass]="{'active': i == 0 }" *ngFor="let work of typesOfWork; let i= index"><a data-toggle="tab"
                 href="#{{ work }}">{{ work }}</a></li>
@@ -83,5 +85,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </div>

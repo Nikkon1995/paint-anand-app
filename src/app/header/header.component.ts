@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,10 +12,12 @@ export class HeaderComponent implements OnInit {
     heading: 'Dipika Space Home Studio',
     subHeading: 'Modern Design For Your Home'
   }
+  displayServicesHeader = true;
   displayPrice: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+    this.displayServicesHeader = true;
   }
 
   displayPrices() {

@@ -3,13 +3,15 @@
         <form [formGroup]="form" class="form-group col-lg-offset-0.5" (ngSubmit)="onSubmit()">
             <mat-form-field appearence="outline" class="form-field">
                 <mat-label style="color: white;">Enter email:</mat-label>
-                <input type="email" matInput formControlName="email">
+                <input type="email" matInput autocomplete="off" formControlName="email">
             </mat-form-field>
             <mat-form-field appearence="fill" class="form-field">
                 <mat-label style="color: white;">Enter password</mat-label>
-                <input type="password" matInput formControlName="password">
+                <input type="password" autocomplete="off" matInput formControlName="password">
             </mat-form-field>
-            <button mat-raised-button color="primary" [disabled]="form.invalid" class="button">Login</button>
+            <div class="text-center">
+                <button mat-raised-button color="primary" style="background-color: #673ab7;" [disabled]="form.invalid" class="button"><strong>Login</strong></button>
+            </div>
         </form>
     </div>
 </div>

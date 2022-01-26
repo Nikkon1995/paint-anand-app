@@ -30,9 +30,10 @@ export class ContactComponent {
     onSubmit(form: NgForm) {
         this.contactService.storeQuery(form).subscribe();
         console.log(form.form.value);
+        form.reset()
     }
 
     onClear(form: NgForm) {
-        form.form.reset();
+        form.reset();
     }
 }
