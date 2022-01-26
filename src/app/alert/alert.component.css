@@ -1,59 +1,51 @@
-.back-drop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.75);
-    z-index: 50;
-}
-
-.alert-main {
-    position: fixed;
-    top: 15vh;
-    left: 20vw;
-    width: 60vw;
-    /* height: 50vh; */
-    padding: 20px;
-    background: rgba(69, 14, 42, 0.57);
-    z-index: 100;
-}
-
-button {
-    font-size: larger;
-}
-
-.font {
+.panel-info {
     color: whitesmoke;
     background-color: rgba(204, 14, 42, 0.57);
     font-size: larger;
     font-weight: 500;
+    font-weight: 800;
 }
 
-.font1 {
+.panel-heading {
     color: whitesmoke;
     background-color: rgba(75, 56, 59, 0.68);
 }
 
-.row-margin1 {
-    margin-left: 40px;
+::ng-deep .mat-dialog-container {
+    background: currentColor;
 }
 
-.row-margin2 {
-    margin-left: 95px;
+.panel-container {
+    display: flex;
+    width: 100%;
+}
+
+.panel-width {
+    width: 33%;
+}
+
+.panel-width-1 {
+    width: 50%;
+}
+
+.button {
+    font-size: large;
+    font-weight: bolder;
+    background: lightblue !important;
 }
 
 @media screen and (max-width: 768px) {
-    .row-margin1 {
-        margin-left: 0px;
+    .panel-container {
+        display: block;
+        width: 100%;
     }
     
-    .row-margin2 {
-        margin-left: 0px;
+    .panel-width {
+        width: 50%;
+        margin-left: 25%;
     }
 
-    .alert-main {
-        max-height: 400px;
-        overflow-y: scroll;
+    .panel-width-1 {
+        margin-left: 25%
     }
 }
