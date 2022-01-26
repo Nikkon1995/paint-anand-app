@@ -1,5 +1,5 @@
 a {
-    color: whitesmoke;
+    color: white;
     text-decoration: none;
     white-space: nowrap;
     font-size: large;
@@ -11,4 +11,9 @@ a:hover {
 
 .thumbnail>img {
     height: 500px;
+}
+
+.nav-tabs>li.active>a {
+    background-color: #673ab7;
+    color: white;
 }

@@ -3,10 +3,6 @@ label {
     color: whitesmoke;
 }
 
-input.ng-invalid.ng-touched {
-    border: 4px solid red;
-}
-
 div.row {
     margin-bottom: 20px;
 }
@@ -20,4 +16,41 @@ button {
 input, textarea {
     color: black !important;
     font-weight: 800;
+}
+
+::ng-deep .mat-select-panel {
+    background: black;
+}
+
+mat-label {
+    color: white;
+    font-size: large;
+}
+
+mat-form-field {
+    padding: 10px;
+    width: 50%; 
+    border: 1px solid white;
+}
+
+input, textarea, ::ng-deep .mat-select-value {
+    color: white !important;
+    font-size: larger ;
+}
+
+::ng-deep .mat-form-field-infix {
+    border-bottom: 1px solid white;
+}
+
+.button {
+    margin-top: 20px; 
+    width: 40%; 
+    font-size: x-large;
+}
+
+.options {
+    color: white; 
+    font-size: large; 
+    text-align: center; 
+    border-bottom: 1px solid white;
 }

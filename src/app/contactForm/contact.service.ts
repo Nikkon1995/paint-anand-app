@@ -18,7 +18,7 @@ export class ContactService {
 
     putUrl = 'https://paint-app-2af65-default-rtdb.firebaseio.com/formData.json';
     storeQuery(queryForm: NgForm) {
-        return this.http.put<query>(this.putUrl, {
+        return this.http.post<query>(this.putUrl, {
             name: queryForm.form.value['name'],
             contact: queryForm.form.value['phone'],
             query: queryForm.form.value['query'],
