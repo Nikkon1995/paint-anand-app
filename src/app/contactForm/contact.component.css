@@ -33,6 +33,17 @@ mat-form-field {
     border: 1px solid white;
 }
 
+@media screen and (max-width: 768px) {
+    mat-form-field {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    div.row {
+        margin-bottom: 0px;
+    }
+}
+
 input, textarea, ::ng-deep .mat-select-value {
     color: white !important;
     font-size: larger ;

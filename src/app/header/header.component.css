@@ -24,9 +24,18 @@
     color: #fff !important;
   }
 
-  .jumbotron {
+.jumbotron {
     background-color: brown;
     color: #fff;
     font-family: 'Rubik', sans-serif;
     width: inherit;
-  }
+}
+
+.button-style {
+  background-color: black; 
+  color: white !important; 
+  border: none; 
+  letter-spacing: 3px; 
+  padding: 7.5px 15px; 
+  font-family: 'Titillium Web', sans-serif;
+}
