@@ -10,7 +10,7 @@
         <div style="margin: 50px 0px">
             <ul class="nav nav-tabs nav-justified">
                 <li [ngClass]="{'active': i == 0 }" *ngFor="let work of typesOfWork; let i= index"><a data-toggle="tab"
-                        href="#{{ work }}">{{ work }}</a></li>
+                        href="#{{ work }}" (click)="scrollTo()">{{ work }}</a></li>
             </ul>
             <div class="tab-content">
                 <div id="Repair" class="tab-pane fade in active">

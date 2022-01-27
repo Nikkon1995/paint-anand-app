@@ -7,10 +7,20 @@ import { Component, OnInit } from "@angular/core";
 })
 export class PicturesComponent implements OnInit{
     animate = true;
+    
     ngOnInit(): void {
         setTimeout(()=> {
             this.animate = false;
         }, 2000)
+    }
+
+    scrollTo() {
+        if(window.innerWidth < 768) {
+            window.scroll({
+                behavior: "smooth",
+                top: 500
+            })
+        }
     }
 
     typesOfWork: string[] = [
