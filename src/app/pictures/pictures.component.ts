@@ -60,8 +60,6 @@ export class PicturesComponent implements OnInit{
         'Ceiling 6.jpg',
         'Ceiling 7.jpg',
         'Ceiling 8.jpg',
-        'Ceiling 9.jpg',
-        'Ceiling 10.jpg',
         'Ceiling 11.jpg'
     ];
 
