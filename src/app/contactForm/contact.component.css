@@ -65,3 +65,10 @@ input, textarea, ::ng-deep .mat-select-value {
     text-align: center; 
     border-bottom: 1px solid white;
 }
+
+::ng-deep .mat-option:hover {
+    background: white !important;
+    font-size: x-large !important;
+    font-weight: 800 !important;
+    color: black !important;
+}
