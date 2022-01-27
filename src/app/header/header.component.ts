@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { ActivatedRoute, NavigationEnd, NavigationStart, Route, Router } from '@angular/router';
 import { AlertComponent } from '../alert/alert.component';
+import { AuthComponent } from '../auth/auth.component';
 
 @Component({
   selector: 'app-header',
@@ -44,6 +45,13 @@ export class HeaderComponent implements OnInit {
 
     this.dialogRef.afterClosed().subscribe(()=> {
       this.displayAlert = false;
+    })
+  }
+
+  openLoginDialog() {
+    this.dialogRef = this.matDialog.open(AuthComponent)
+    this.dialogRef.afterClosed().subscribe((data)=> {
+      console.log(data);
     })
   }
 }

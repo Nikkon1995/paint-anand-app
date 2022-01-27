@@ -1,3 +1,4 @@
+<!-- <a name="top"></a> -->
 <div id="about">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -8,7 +9,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" (click)="displayServicesHeader = true" routerLink="/home">Home</a>
-                <a class="navbar-brand" routerLink="/auth">Login</a>
+                <a class="navbar-brand" (click)="openLoginDialog()">Login</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
