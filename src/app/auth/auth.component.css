@@ -17,3 +17,11 @@
     width: 40%;
     font-size: large;
 }
+
+::ng-deep .mat-dialog-container {
+    background: currentColor;
+}
+
+input {
+    color: white;
+}

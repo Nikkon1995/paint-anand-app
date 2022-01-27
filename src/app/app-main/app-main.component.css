@@ -25,10 +25,24 @@
 
 .border {
     border: 1px dotted #6F1D0B;
-    margin: 5px -5px;
+    margin: 5px 0px;
     padding: 5px;
     background-color: brown;
+    border-start-start-radius: 20px;
+    border-end-end-radius: 20px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
     color: honeydew;
+}
+
+h2 {
+    letter-spacing: 4px;
+    font-size: xx-large;
+}
+
+h4 {
+    letter-spacing: 4px;
+    font-size: large;
 }
 
 .carousel-inner {
@@ -46,4 +60,9 @@
     font-size: large; 
     margin-top: 25px; 
     background-color: rgba(30, 175, 200, 0.45);
+}
+
+li {
+    padding: 0px 10px;
+    margin: 0px 5px;
 }

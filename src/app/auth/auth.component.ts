@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { MatDialogRef } from "@angular/material/dialog";
 
 @Component({
     selector: 'app-auth',
@@ -7,7 +8,7 @@ import { FormControl, FormGroup, Validators } from "@angular/forms";
     styleUrls: ['./auth.component.css']
 })
 export class AuthComponent implements OnInit{
-    emailFormControl = new FormControl('', [Validators.required, Validators.email]);
+    constructor(private dialogRef: MatDialogRef<AuthComponent>) {}
 
     public form: FormGroup;
     ngOnInit(): void {
@@ -24,6 +25,6 @@ export class AuthComponent implements OnInit{
     }
 
     onSubmit() {
-        console.log(this.form);
+        this.dialogRef.close(this.form.value);
     }
 }

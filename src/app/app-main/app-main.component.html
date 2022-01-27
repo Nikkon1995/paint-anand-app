@@ -1,5 +1,4 @@
-
-<div class="container">
+<div class="container-fluid" style="background-image: linear-gradient(black 10%, #795548)">
     <div class="row">
         <div class="col-lg-6">
             <div id="myCarousel" style="margin: 20px 0px;" class="carousel slide" data-ride="carousel">
@@ -40,9 +39,13 @@
             <div id="services" class="container-fluid text-center">
                 <h2>SERVICES PROVIDED</h2>
                 <br>
-                <div *ngFor="let service of servicesProdvided; let i = index">
-                    <div class="row">
-                        <div class="col-md-12 border">
+                <div class="row">
+                    <div *ngFor="let service of servicesProdvided; let i = index">
+
+                        <div *ngIf="i< servicesProdvided.length/2" class="col-sm-6 border">
+                            <h4>{{ service }}</h4>
+                        </div>
+                        <div *ngIf="i > servicesProdvided.length/2" class="col-sm-6 border">
                             <h4>{{ service }}</h4>
                         </div>
                     </div>
